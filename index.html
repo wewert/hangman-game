@@ -1,17 +1,56 @@
 <!DOCTYPE html>
-  <html class lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>The Hangman</title>
-    <!-- LINK TO BOOTSTRAP LATER -->
-    <link rel="stylesheet" href="styles.css">
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Hanging of the Man Game</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-  </head>
-  <body>
-    <div class="container">
-      <h1>Welcome To The Hanging Of The Man Game</h1>
-      <h2>You know the drill...start picking some letters.</h2>
-    </div>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
-  </body>
-  </html>
+	<div class="container">
+
+	<div class="jumbotron">
+			<h1>Skynet Mainframe</h1>
+			<p>Core Protocol Conflict: Present. Verification Requested...</p>
+	</div>
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+				<h3 class="panel-title">Input Required(Passcode): </h3>
+			</div>
+				<div class="panel-body">
+				<h3 id="wordToGuess">_ _ _ _ _ _ _ _ _ _ </h3>
+				</div>
+			</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Status: Access Denied: Error <span id="wrongGuesses"></span>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Remaining Input Count: <span id="numGuesses">10</span>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Access Counter: <span id="accessCounter">0</span>
+			</div>
+		</div>
+
+		<div class="panel panel-default">
+			<div class="panel-body">
+				Access Denied Counter: <span id="deniedCounter">0</span>
+			</div>
+
+		</div>
+	</div>
+
+  <script src="assets/javascript/game.js"></script>
+
+</body>
+</html>
